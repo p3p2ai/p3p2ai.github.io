@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>THAITAXISERVICES™ Opening Crawl</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/sf-distant-galaxy" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #000000;
+      padding-bottom: 80px;
+    }
+
+    .star {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      background-color: white;
+    }
+
+    .intro {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      animation: intro 6s ease-out 1s;
+      color: rgb(75, 213, 238);
+      font-family: 'Oswald', sans-serif;
+      font-weight: 400;
+      font-size: 300%;
+      opacity: 0;
+    }
+
+    @keyframes intro {
+      0% { opacity: 0; }
+      20% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    .logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      animation: logo 9s ease-out 9s;
+      opacity: 0;
+      width: auto;
+    }
+
+    .logo-text-style {
+      font-family: 'Arial Black', sans-serif;
+      color: #FFE81F;
+      font-size: 4em;
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.1;
+    }
+
+    @keyframes logo {
+      0% { transform: translate(-50%, -50%) scale(1.2); opacity: 1; }
+      50% { transform: translate(-50%, -50%) scale(1.2); opacity: 1; }
+      100% { transform: translate(-50%, -50%) scale(0.3); opacity: 0; }
+    }
+
+    p {
+      color: #FFE81F;
+    }
+
+    #board {
+      font-family: 'Trade Gothic Bold No. 2', sans-serif;
+      transform: perspective(300px) rotateX(25deg);
+      transform-origin: 50% 100%;
+      text-align: justify;
+      position: absolute;
+      margin-left: -9em;
+      font-weight: bold;
+      overflow: hidden;
+      font-size: 350%;
+      height: 50em;
+      width: 18em;
+      bottom: 0;
+      left: 50%;
+      color: #FFE81F;
+    }
+
+    #board:after {
+      position: absolute;
+      content: ' ';
+      bottom: 60%;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+
+    #content {
+      animation: scroll 100s linear 16s;
+      position: absolute;
+      top: 100%;
+    }
+
+    #title, #subtitle {
+      text-align: center;
+    }
+
+    @keyframes scroll {
+      0% { top: 100%; }
+      100% { top: -170%; }
+    }
+
+    @media (max-width: 768px) {
+      .logo-text-style { font-size: 1.7em; }
+      .intro { font-size: 140%; }
+      #board { font-size: 150%; width: 90%; margin-left: -45%; }
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 12px 0;
+      z-index: 1000;
+      text-align: center;
+    }
+
+    footer nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    footer nav ul li {
+      display: inline-block;
+      margin: 0 12px;
+    }
+
+    footer nav ul li a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+
+    footer nav ul li a:hover {
+      color: #FF2800;
+    }
+  </style>
+</head>
+<body>
+  <section class="intro">
+    The Journey Never Ends,<br> and this is....
+  </section>
+
+  <section class="logo">
+    <div class="logo-text-style">THAITAXISERVICES™</div>
+  </section>
+
+  <div id="board">
+    <div id="content">
+      <p id="title">About Us</p>
+      <p id="subtitle">A journey through the past, present, and future—powered by our services.</p>
+      <br>
+      <p>We are a provider of vehicles, aircraft, and security services, operating since 2012 to the present with pride. We have completed numerous missions, both at the individual and organizational levels worldwide, who have continuously placed their trust in us through our services.</p>
+      <p>With a wide range of ground transportation vehicles, we support all types of passenger travel—personal, group, conferences, events, concerts, sports competitions, film productions, advertising campaigns, and many more beyond description. This includes specially designed assignments that we are entrusted to carry out, such as research and development projects.</p>
+      <p>The next area involves manned aviation services, operated as an independent broker. This segment supports global passenger travel by offering exceptional value — the best possible pricing and deals. Clients can choose from a wide range of options based on date, time, and location, all aimed at maximizing convenience. The services are divided into three categories: Jet Rental, which includes aircraft of all sizes; Charter Flights, tailored for groups or organizations; and Air Cargo Charter, designed for time-sensitive parcel transportation.</p>
+      <p>Finally, the last part of what we do—and do very well—is Security Service. This is divided into three categories: Bodyguard Service, provided by disciplined, professional, yet courteous personnel; Vehicle Escort Service, offering secure transportation for individuals and high-value.</p>
+      <p>We have had the honor of being part of many passengers’ histories, making every journey—past, present, and future—meaningful, valuable, and memorable. However, please do not forget your belongings when using our services. If there is anything we can assist you with, please do not hesitate to let us know at any time—Every journey is always significant.</p>
+    </div>
+  </div>
+
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="https://www.thaitaxiservices.com/">Home</a></li>
+        <li><a href="https://www.thaitaxiservices.com/chauffeured/">Chauffeured Car Rental</a></li>
+        <li><a href="https://www.thaitaxiservices.com/airport-transfer/">Airport Transfer</a></li>
+        <li><a href="https://www.thaitaxiservices.com/aircraft-charter/">Aircraft Charter</a></li>
+        <li><a href="https://www.thaitaxiservices.com/security-escort-service/">Security Service</a></li>
+        <li><a href="https://www.thaitaxiservices.com/blog/">Blog</a></li>
+        <li><a href="https://www.thaitaxiservices.com/contact-thaitaxiservices/">Contact Us</a></li>
+        <li>
+          <a href="https://www.thaitaxiservices.com/about-us/">
+            <img src="https://flagcdn.com/w40/us.png" alt="English" width="20"> EN
+          </a>
+          |
+          <a href="https://th.thaitaxiservices.com/about-us/">
+            <img src="https://flagcdn.com/w40/th.png" alt="ภาษาไทย" width="20"> TH
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script>
+    const numStars = 100;
+    for (let i = 0; i < numStars; i++) {
+      let star = document.createElement("div");
+      star.className = "star";
+      var xy = getRandomPosition();
+      star.style.top = xy[0] + 'px';
+      star.style.left = xy[1] + 'px';
+      document.body.append(star);
+    }
+
+    function getRandomPosition() {
+      var y = window.innerWidth;
+      var x = window.innerHeight;
+      var randomX = Math.floor(Math.random() * x);
+      var randomY = Math.floor(Math.random() * y);
+      return [randomX, randomY];
+    }
+  </script>
+
+  <audio id="bg-audio" autoplay loop hidden>
+    <source src="https://www.thaitaxiservices.com/wp-content/uploads/2025/04/music_about.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="toggle-audio-btn" onclick="toggleAudio()" style="
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    color: #FFE81F;
+    border: 2px solid #FFE81F;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    z-index: 1001;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  ">
+    🔊 Music On
+  </button>
+
+  <script>
+    const audio = document.getElementById("bg-audio");
+    const btn = document.getElementById("toggle-audio-btn");
+
+    function toggleAudio() {
+      if (audio.paused) {
+        audio.play();
+        btn.innerHTML = "🔊 Music On";
+      } else {
+        audio.pause();
+        btn.innerHTML = "🔇 Music Off";
+      }
+    }
+  </script>
+</body>
+</html>
